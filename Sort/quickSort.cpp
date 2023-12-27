@@ -31,11 +31,15 @@ int partition( int arr[], int l, int h){
     }
     while(arr[end] >= pivot){
         end--;
+         cout<<end<<endl;
     }
     if(start<end){
+       
        swap(arr[start],arr[end]);
+
     }
   }
+  
   swap(arr[l],arr[end]);
 
   return end;
